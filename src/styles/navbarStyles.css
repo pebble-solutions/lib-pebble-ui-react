@@ -1,0 +1,138 @@
+.sidebar {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  bottom: 20px;
+  min-width: 50px;
+  background-color: #110633;
+  border: 1px solid rgb(176, 63, 237);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding :5px;
+}
+
+.menu-item {
+  border-radius: 5px;
+  min-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+.menu-item:hover {
+  background-color: rgba(162, 162, 162, 0.261);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-icon {
+  border-radius: 5px;
+  margin : 5px 0;
+  align-items: center;
+  justify-content: center;
+  padding:  5px 0 5px 0 ;
+
+}
+
+.menu-icon:hover {
+  background-color: rgba(162, 162, 162, 0.261);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-detail{
+  color:white;
+   height:24;
+    width:24;
+}
+
+.menu-profileIcon {
+  position: absolute;
+  width: 50px;
+  margin-top: auto;
+  align-items: center;
+  padding-bottom: 10px;
+  bottom: 0;
+}
+.menu-profileIcon hr {
+max-width: 48px;
+}
+
+.menu-item p {
+  margin-top: -5px;
+  font-size: 10px;
+}
+.sidebar hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(176, 63, 237, 0.454);
+  width: 100%;
+}
+
+.modal {
+  min-width: 180px;
+  border: #525254 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 220px; 
+  transform: translateX(-50%);
+}
+  
+  .modal-content {
+    border-radius: 5px;
+  }
+  
+  .modal-item {
+    display: flex;  
+    align-items: center; 
+    justify-content: left;
+    margin: 5px 10px ;
+    padding-left: 15px;
+  
+  }
+ 
+  .modal-item:hover {
+    background-color: #a2a2a21a;
+    border-radius: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    flex-direction: row;
+  }
+
+  .icon--detail__modal {
+    margin-right: 20px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+  }
+  .icon--detail__modal p{
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .disconnect{
+    color:#d62323
+  }
+
+.sidebarSmall {
+  width: 40px;
+  max-height: 45px;
+  padding: 0;
+}
+ .menuSmall-icon{
+  margin: 0;
+  padding:  10px 0 5px 0 ;
+ }
+
+ .sidebarContainerPebble{
+  margin-left: 400px;
+ }
+
