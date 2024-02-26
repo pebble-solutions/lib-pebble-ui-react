@@ -1,19 +1,23 @@
 import ItemSideBar from './ItemSidebar';
 import { ItemsContainerOptions } from '../../types/ItemsContainerOptions';
-import '../../styles/navbarStyles.css'
+import '../../styles/navbarStyles.css';
+import SimpleBarReact from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 
 const SideBarItemsContainer = ({items}:ItemsContainerOptions) => {
     
   return (
-    <div className='menu-items'>
-      {
-        items.map(item => (
-         <ItemSideBar  icon={item.icon} label={item.label} target={item.target}   />
+    <div>
+      <SimpleBarReact  style={{maxHeight :1000}}>
+      { items.map((item , index)=> (
+         <ItemSideBar key={index} icon={item.icon} label={item.label} target={item.target} />
         ))
       }
-     
+     </SimpleBarReact>
     </div>
   );
 }
 
 export default SideBarItemsContainer;
+
+
