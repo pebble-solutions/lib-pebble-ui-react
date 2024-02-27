@@ -2,7 +2,7 @@ import{ useState, useRef, useEffect } from 'react';
 import { NavArrowUp, User} from 'iconoir-react';
 import UserModal from '../sidebarPebble/UserModal';
 import SideBarItemsContainer from './SidebarItemsContainer'
-import '../../styles/navbarStyles.css'
+import '../../styles/SidebarPebble.css';
 import { MenuItem } from '../../classes/MenuItem';
 
 

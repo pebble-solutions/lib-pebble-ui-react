@@ -1,5 +1,5 @@
 import { Menu } from 'iconoir-react';
-import '../../styles/navbarStyles.css';
+import '../../styles/SidebarPebble.css';
 
 function SidebarSmall ({ onMenuClick, isSmall }: { onMenuClick: () => void, isSmall: boolean }) {
   return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'; 
 import { MenuItemType } from '../../types/MenuItemType';
-import '../../styles/navbarStyles.css';
+import '../../styles/SidebarPebble.css';
 
 const ItemSideBar : React.FC<MenuItemType> = ({ icon:IconComponent, label, target, useModalStyles }) => {
 

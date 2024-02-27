@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+
+Pour utiliser les icônes voulues dans la sidebar et sa modale remplacer celles existantes dans menu.ts en ajustant la target
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
