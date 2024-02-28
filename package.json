@@ -9,7 +9,8 @@
     "clean": "rm -rf ./lib",
     "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
     "prepack": "npm run build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tigrouformatic",
   "license": "GPL-3.0-or-later",

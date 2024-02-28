@@ -59,7 +59,7 @@ Si vous souhaitez contribuer à l'amélioration du composant Sidebar de Pebble, 
 
 ## Licence
 
-Le composant Sidebar de Pebble est distribué sous la licence MIT. Consultez le fichier LICENSE pour plus d'informations.
+Le composant Sidebar de Pebble est distribué sous la licence GPL-3.0. Consultez le fichier LICENSE pour plus d'informations.
 
 ---
 
@@ -128,7 +128,7 @@ If you would like to contribute to the improvement of the Pebble Sidebar compone
 
 ## License
 
-The Pebble Sidebar component is distributed under the MIT license. See the LICENSE file for more information.
+The Pebble Sidebar component is distributed under the GPL-3.0 license. See the LICENSE file for more information.
 
 ---
 
