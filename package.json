@@ -1,6 +1,6 @@
 {
   "name": "@pebble-solutions/lib-pebble-ui-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "La librairie lib-pebble-ui-react est une collection de composants React conçus pour simplifier le développement d'interfaces utilisateur dans les applications Pebble. Cette librairie fournit une gamme de composants qui structurent et facilitent la création d'interfaces utilisateur interactives et esthétiques.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/pebble-solutions/lib-pebble-ui-react.git",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "sidebarPebble/*",
+    "sidebarPebble/classes/MenuItem.ts",
+    "sideberPebble/types/*.ts",
+    "sidebarPebble/UserModal/*.tsx"
   ],
   "devDependencies": {
     "@types/react": "^18.2.55",
