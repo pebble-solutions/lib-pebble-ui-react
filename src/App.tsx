@@ -1,6 +1,4 @@
 import './App.css'
-import './styles/SidebarPebble.css'; 
-import './styles/PeriodRender.css'; 
 import SidebarContainerPebble  from  './components/sidebarPebble/SidebarContainerPebble'
 import SquareContainerWeek from './components/periodRender/SquareContainerWeek';
 import { getMenuItems , getMenuItemsModal } from './menu';

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'; 
 import { SquareType } from '../../types/SquareType';
-import '../../styles/PeriodRender.css';
+import './PeriodRender.css';
 
 
 

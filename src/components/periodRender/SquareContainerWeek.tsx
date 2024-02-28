@@ -1,5 +1,5 @@
 import Square  from './Square';
-import '../../styles/PeriodRender.css';
+import './PeriodRender.css';
 import { SquareItem } from '../../classes/SquareItem';
 
 
