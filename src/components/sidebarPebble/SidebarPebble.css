@@ -1,4 +1,4 @@
-.sidebar {
+  .sidebar {
     position: fixed;
     left: 15px;
     top: 20px;
@@ -8,10 +8,12 @@
     border: 1px solid #b03fed;
     box-shadow: 0 2px 4px #00000033;
     border-radius: 10px;
-    padding: 0 5px 10px 5px;
+    padding: 0 5px 0 5px; 
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
-  
+
   .menu-items {
     overflow-y:clip;
     z-index: 1;
@@ -41,9 +43,12 @@
     align-items: center;
     justify-content: center;
     padding: 5px 0;
-  
   }
-  
+
+  .parent-menu-icon {
+    margin-top: auto;
+  }
+
   .menu-icon:hover {
     background-color: #a2a2a243;
     cursor: pointer;
