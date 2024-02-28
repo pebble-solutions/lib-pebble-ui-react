@@ -5,7 +5,7 @@ import { MenuItem } from './classes/MenuItem';
 import { getMenuItems, getMenuItemsModal } from './menu';
 
 type SidebarContainerProps = {
-  items?: MenuItem[]; // Marquez les propriétés comme optionnelles si elles peuvent être absentes
+  items?: MenuItem[]; 
   itemsModal?: MenuItem[];
 };
 
@@ -21,7 +21,6 @@ function SidebarContainerPebble({ items, itemsModal }: SidebarContainerProps) {
     setIsSidebarOpen(false);
   };
 
-  // Utilisez la logique de rendu conditionnel pour déterminer les éléments à afficher
   const itemsRender = items || getMenuItems();
   const itemsModalRender = itemsModal || getMenuItemsModal();
 
