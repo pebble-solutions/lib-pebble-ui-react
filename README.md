@@ -44,7 +44,7 @@ La librairie lib-pebble-ui-react est distribuée sous la licence MIT. Consultez 
 
 Nous espérons que la librairie lib-pebble-ui-react vous sera utile dans le développement de vos applications React. N'hésitez pas à nous contacter pour toute question, suggestion ou problème rencontré lors de l'utilisation de la librairie.
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+                                                              /////////////////////////////////////////////////////////////////////////////////////////////////
 
 # lib-pebble-ui-react (English)
 
