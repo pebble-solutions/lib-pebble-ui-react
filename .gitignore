@@ -1,0 +1,28 @@
+# Dossiers générés par les outils de construction
+/build
+/dist
+/lib
+
+# Dépendances npm
+/node_modules
+
+# Fichiers de configuration spécifiques à l'utilisateur
+.env
+.env.local
+
+# Fichiers de sauvegarde et fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers spécifiques à l'IDE
+.vscode/
+.idea/
+
+# Fichiers de sauvegarde automatique
+*.bak
+*~
+
+# Fichiers de build de TypeScript
+*.js
+*.js.map
+
