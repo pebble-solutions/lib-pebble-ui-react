@@ -1,6 +1,6 @@
 import ItemSideBar from './ItemSidebar';
 import { ItemsContainerOptions } from '../../types/ItemsContainerOptions';
-import '../../styles/SidebarPebble.css';
+import './SidebarPebble.css';
 
 function UserModal({items}:ItemsContainerOptions) {
   return (

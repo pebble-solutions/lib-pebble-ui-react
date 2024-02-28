@@ -1,6 +1,6 @@
 import ItemSideBar from './ItemSidebar';
 import { ItemsContainerOptions } from '../../types/ItemsContainerOptions';
-import '../../styles/SidebarPebble.css';
+import './SidebarPebble.css';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 

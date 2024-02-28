@@ -1,4 +1,4 @@
-import '../../../styles/SidebarPebble.css';
+import '../SidebarPebble.css';
 import { SystemShut } from 'iconoir-react';
 
 
