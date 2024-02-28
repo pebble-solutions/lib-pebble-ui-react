@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import SidebarSmall from './SidebarSmall';
-import { MenuItem } from '../../classes/MenuItem';
+import { MenuItem } from './classes/MenuItem';
 import { getMenuItems, getMenuItemsModal } from './menu';
 
 type SidebarContainerProps = {
