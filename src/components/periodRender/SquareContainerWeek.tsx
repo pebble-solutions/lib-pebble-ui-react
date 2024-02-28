@@ -1,6 +1,6 @@
 import Square  from './Square';
 import './PeriodRender.css';
-import { SquareItem } from '../../classes/SquareItem';
+import { SquareItem } from './classes/SquareItem';
 
 
 type SquareContainerWeekProps={
