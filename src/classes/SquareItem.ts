@@ -3,8 +3,8 @@ import { SquareType } from "../types/SquareType"
 export class SquareItem {
    
     id? : string
-    target: string
-    label?: string
+    target: string 
+    label?: string 
     start? : Date
     end? : Date
     status? : string
