@@ -2,15 +2,16 @@ import { useState, useRef, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import SidebarSmall from './SidebarSmall';
 import { MenuItem } from '../../classes/MenuItem';
-
+import { getMenuItems, getMenuItemsModal } from './menu';
 
 type SidebarContainerProps = {
-  items: MenuItem[]
-  itemsModal:MenuItem[]
-}
+  items?: MenuItem[]; // Marquez les propriétés comme optionnelles si elles peuvent être absentes
+  itemsModal?: MenuItem[];
+};
 
-function SidebarContainerPebble({items, itemsModal}:SidebarContainerProps) {
+function SidebarContainerPebble({ items, itemsModal }: SidebarContainerProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -20,12 +21,14 @@ function SidebarContainerPebble({items, itemsModal}:SidebarContainerProps) {
     setIsSidebarOpen(false);
   };
 
-  const sidebarRef = useRef<HTMLDivElement>(null);
+  // Utilisez la logique de rendu conditionnel pour déterminer les éléments à afficher
+  const itemsRender = items || getMenuItems();
+  const itemsModalRender = itemsModal || getMenuItemsModal();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
-        closeSidebar(); 
+        closeSidebar();
       }
     }
 
@@ -36,9 +39,9 @@ function SidebarContainerPebble({items, itemsModal}:SidebarContainerProps) {
   }, [sidebarRef]);
 
   return (
-    <div ref={sidebarRef}> 
-      <SidebarSmall onMenuClick={toggleSidebar} isSmall={!isSidebarOpen} /> 
-      {isSidebarOpen && <Sidebar onClose={closeSidebar} items={items} itemsModal={itemsModal} />} 
+    <div ref={sidebarRef}>
+      <SidebarSmall onMenuClick={toggleSidebar} isSmall={!isSidebarOpen} />
+      {isSidebarOpen && <Sidebar onClose={closeSidebar} items={itemsRender} itemsModal={itemsModalRender} />}
     </div>
   );
 }
