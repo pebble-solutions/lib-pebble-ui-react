@@ -1,5 +1,5 @@
 import { User } from 'iconoir-react';
-import '../../../styles/SidebarPebble.css';
+import '../SidebarPebble.css';
 
 function UserInSideBarModal() {
    return(

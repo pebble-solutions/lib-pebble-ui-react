@@ -2,8 +2,8 @@ import{ useState, useRef, useEffect } from 'react';
 import { NavArrowUp, User} from 'iconoir-react';
 import UserModal from '../sidebarPebble/UserModal';
 import SideBarItemsContainer from './SidebarItemsContainer'
-import '../../styles/SidebarPebble.css';
-import { MenuItem } from '../../classes/MenuItem';
+import './SidebarPebble.css';
+import { MenuItem } from './classes/MenuItem';
 
 
 type SidebarProps = {
@@ -43,10 +43,12 @@ function Sidebar({ onClose , items, itemsModal}: SidebarProps) {
       <div className='menu-items'>
          <SideBarItemsContainer items={items} />
       </div>
+      <div className='parent-menu-icon'>
         <hr />
         <div ref={profileIconRef} className="menu-icon {`menu-profileIcon ${isModalOpen ? 'active' : ''}`}" onClick={handleProfileIconClick}>
           <User className='icon-detail' />
         </div>
+      </div>
       {isModalOpen && <div ref={modalRef}><UserModal items={itemsModal} /></div>}
     </div>
   );
