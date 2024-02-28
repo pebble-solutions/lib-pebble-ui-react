@@ -1,0 +1,52 @@
+{
+  "name": "@pebble-solutions/lib-pebble-ui-react",
+  "version": "1.0.0",
+  "description": "La librairie lib-pebble-ui-react est une collection de composants React conçus pour simplifier le développement d'interfaces utilisateur dans les applications Pebble. Cette librairie fournit une gamme de composants qui structurent et facilitent la création d'interfaces utilisateur interactives et esthétiques.",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "tigrouformatic",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "iconoir-react": "^7.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
+    "simplebar-react": "^3.2.4"
+  },
+  "homepage": "https://github.com/pebble-solutions/lib-pebble-ui-react.git",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pebble-solutions/lib-pebble-ui-react.git"
+  },
+  "keywords": [
+    "librairie",
+    "pebble",
+    "react",
+    "composant",
+    "ui",
+    "menu"
+  ],
+  "bugs": {
+    "url": "https://github.com/pebble-solutions/lib-pebble-ui-react/issues"
+  }
+}

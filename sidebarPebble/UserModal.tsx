@@ -1,3 +1,4 @@
+import React from 'react';
 import ItemSideBar from './ItemSidebar';
 import { ItemsContainerOptions } from './types/ItemsContainerOptions';
 import './SidebarPebble.css';

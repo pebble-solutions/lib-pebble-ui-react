@@ -1,3 +1,4 @@
+import React from 'react';
 import{ useState, useRef, useEffect } from 'react';
 import { NavArrowUp, User} from 'iconoir-react';
 import UserModal from '../sidebarPebble/UserModal';
