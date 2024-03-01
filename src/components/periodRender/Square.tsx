@@ -9,8 +9,8 @@ interface SquareProps {
   width?: string;
 }
 
-const Square: React.FC<SquareProps> = ({ squareItem, height , width  }) => {
-  const { target, color } = squareItem;
+const Square: React.FC<SquareProps> = ({ squareItem  }) => {
+  const { target, height, width, color } = squareItem;
 
   const squareStyle: React.CSSProperties = {
     backgroundColor: color || 'transparent',

@@ -5,7 +5,6 @@ import { SquareItem } from './classes/SquareItem';
 
 type SquareContainerWeekProps={
     items: SquareItem[]
-    squareItemsList: SquareItem[];
 }
 
 const SquareContainerWeek : React.FC<SquareContainerWeekProps> = ({ items }) => {
