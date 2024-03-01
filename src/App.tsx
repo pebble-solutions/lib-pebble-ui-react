@@ -1,13 +1,10 @@
-import './App.css'
-// import SquareContainerWeek from './components/periodRender/SquareContainerWeek';
-// import {getSquareWeekItems} from './squareContainerWeek'
+import './App.css';
 import SeveralSquareContainerWeek from './components/periodRender/SeveralSquareContainerWeek';
 import {getSeveralSquareWeekItems} from './severalSquareContainerWeek'
 import Sidebar from "@pebble-solutions/lib-pebble-ui-react/sidebarPebble/SidebarContainerPebble";
 
 function App() {
-
- 
+  
   return (
     <div>
       <div>
@@ -21,3 +18,4 @@ function App() {
 }
 
 export default App
+

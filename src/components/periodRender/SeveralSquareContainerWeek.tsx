@@ -3,15 +3,15 @@ import SquareContainerWeek from './SquareContainerWeek';
 import { SquareItem } from './classes/SquareItem';
 
 interface SeveralSquareContainerWeekProps {
-    items: SquareItem[];
+    items: SquareItem[][];
 }
 
 const SeveralSquareContainerWeek: React.FC<SeveralSquareContainerWeekProps> = ({ items }) => {
     return (
         <div>
-            {items.map((_itemRow, rowIndex) => (
+            {items.map((item, rowIndex) => (
                 <div key={rowIndex}>
-                    <SquareContainerWeek squareItemsList={items} />
+                    <SquareContainerWeek items={item} />
                 </div>
             ))}
         </div>
@@ -19,3 +19,4 @@ const SeveralSquareContainerWeek: React.FC<SeveralSquareContainerWeekProps> = ({
 };
 
 export default SeveralSquareContainerWeek;
+
