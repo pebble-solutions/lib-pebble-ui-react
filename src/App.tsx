@@ -1,7 +1,9 @@
 import './App.css'
 import Sidebar  from  './components/sidebarPebble/SidebarContainerPebble'
-import SquareContainerWeek from './components/periodRender/SquareContainerWeek';
-import {getSquareWeekItems} from './squareContainerWeek'
+// import SquareContainerWeek from './components/periodRender/SquareContainerWeek';
+// import {getSquareWeekItems} from './squareContainerWeek'
+import SeveralSquareContainerWeek from './components/periodRender/SeveralSquareContainerWeek';
+import {getSeveralSquareWeekItems} from './severalSquareContainerWeek'
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
         <Sidebar/>
       </div>
       <div>
-        <SquareContainerWeek items={getSquareWeekItems()} />
+        <SeveralSquareContainerWeek items={getSeveralSquareWeekItems()} />
       </div>
     </div>
   )

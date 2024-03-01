@@ -5,19 +5,22 @@ import { SquareItem } from './classes/SquareItem';
 
 type SquareContainerWeekProps={
     items: SquareItem[]
+    squareItemsList: SquareItem[];
 }
 
-const SquareContainerWeek = ({ items }: SquareContainerWeekProps) => {
+const SquareContainerWeek : React.FC<SquareContainerWeekProps> = ({ items }) => {
 
     return (
 
         <div className='squareContainerWeek'>
             {items.map((item, id) => (
-            <Square key={id} target={item.target} />
+            <Square key={id} squareItem={item}/>
         ))}
 
         </div>
     );
-}
+};
 
 export default SquareContainerWeek;
+
+

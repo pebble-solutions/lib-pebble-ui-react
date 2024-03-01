@@ -1,10 +1,13 @@
 export type SquareType = {
     
     id? : string
-    target: string
-    label?: string
+    target : string
+    label? : string
     start? : Date
     end? : Date
     status? : string
-    color?: string
+    color? : string
+    height? : string
+    width? : string
+
 }

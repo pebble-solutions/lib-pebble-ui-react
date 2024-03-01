@@ -3,12 +3,14 @@ import { SquareType } from "../types/SquareType"
 export class SquareItem {
    
     id? : string
-    target: string 
-    label?: string 
+    target : string 
+    label? : string 
     start? : Date
     end? : Date
     status? : string
-    color?: string
+    color? : string
+    height? : string
+    width? : string
     
 
     constructor(item: SquareType){
@@ -20,6 +22,8 @@ export class SquareItem {
         this.end=item.end
         this.status=item.status
         this.color=item.color
+        this.height=item.height
+        this.width=item.width
         
     }
 }
