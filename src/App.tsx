@@ -1,17 +1,21 @@
 import './App.css';
-import SeveralSquareContainerWeek from './components/periodRender/SeveralSquareContainerWeek';
-import {getSeveralSquareWeekItems} from './severalSquareContainerWeek'
-import Sidebar from "@pebble-solutions/lib-pebble-ui-react/sidebarPebble/SidebarContainerPebble";
+// import Sidebar from "@pebble-solutions/lib-pebble-ui-react/sidebarPebble/SidebarContainerPebble";
+import LineStaffSeveralContainer from './components/LineStaffSeveralContainer';
+import { getSeveralSquareWeekItems } from "./severalSquareContainerWeek";
+import { getStaffMemberItem } from "./staffMember";
+
+
 
 function App() {
-  
+
   return (
     <div>
       <div>
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
       <div>
-        <SeveralSquareContainerWeek items={getSeveralSquareWeekItems()} />
+        <LineStaffSeveralContainer staffItem={getStaffMemberItem()} severalSquareWeekItems={getSeveralSquareWeekItems()}
+          />
       </div>
     </div>
   )

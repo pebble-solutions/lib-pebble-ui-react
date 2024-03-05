@@ -8,7 +8,7 @@ interface SeveralSquareContainerWeekProps {
 
 const SeveralSquareContainerWeek: React.FC<SeveralSquareContainerWeekProps> = ({ items }) => {
     return (
-        <div>
+        <div className='severalWeeksContainer'>
             {items.map((item, rowIndex) => (
                 <div key={rowIndex}>
                     <SquareContainerWeek items={item} />

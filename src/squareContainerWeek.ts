@@ -1,6 +1,6 @@
 const squareWeekItems = [
     {
-        target: '',
+        target: ''
     },
     {
         target: ''
@@ -12,7 +12,7 @@ const squareWeekItems = [
         target: ''
     }, 
     {
-        target: '',
+        target: ''
     }, 
     {
         target: ''

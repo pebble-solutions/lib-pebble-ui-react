@@ -1,5 +1,5 @@
 import { SquareItem } from "../classes/SquareItem"
 
-export type SeveralSquareContainerWeekProps = {
+export type SeveralSquareContainerWeekType = {
     squareItemsList: SquareItem[][];
 }

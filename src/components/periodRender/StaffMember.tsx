@@ -1,15 +1,19 @@
 import { StaffMemberType } from './types/StaffMemberType';
 import { User } from 'iconoir-react'; 
 
-const StaffMember: React.FC<StaffMemberType> = ({ id, photo, firstName, lastName }) => {
+type StaffMemberProps = {
+    staffItem : StaffMemberType
+}
+
+const StaffMember: React.FC<StaffMemberProps> = ({staffItem}) => {
     return (
-        <div className="staff-member" id={id}>
-            {photo ? (
-                <img src={photo} alt={`${firstName} ${lastName}`} />
+        <div className="staffMember" id={staffItem.id}>
+            {staffItem.photo ? (
+                <img src={staffItem.photo} alt={'Photo'} />
             ) : (
-                <User />
+                <User className="userIcon" />
             )}
-            <span>{`${firstName} ${lastName}`}</span>
+            <span className='staffName'>{`${staffItem.firstName} ${staffItem.lastName}`}</span>
         </div>
     );
 };
