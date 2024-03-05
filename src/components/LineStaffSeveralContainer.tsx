@@ -1,20 +1,13 @@
 import StaffMember from './periodRender/StaffMember';
 import SeveralSquareContainerWeek from './periodRender/SeveralSquareContainerWeek';
-import  {StaffMemberType} from '../components/periodRender/types/StaffMemberType';
-import  {SeveralSquareContainerWeekType} from '../components/periodRender/types/SeveralSquareContainerWeektype';
+import type { StaffMemberType } from '../components/periodRender/types/StaffMemberType';
+import { SquareItem } from './periodRender/classes/SquareItem';
 
-
-
-interface LineStaffSeveralContainerProps {
-    staffItem : StaffMemberType,
-    severalSquareWeekItems  :SeveralSquareContainerWeekType
-}
-
-const LineStaffSeveralContainer :React.FC<LineStaffSeveralContainerProps> = (staffItem , severalSquareWeekItems) => {
+const LineStaffSeveralContainer = ({ staffItem, severalSquareWeekItems }: { staffItem: StaffMemberType, severalSquareWeekItems: SquareItem[][] }) => {
     return (
         <div className="lineStaffSeveralContainer">
             <div className="staffMemberContainer">
-                <StaffMember staffItem={staffItem} />   
+                <StaffMember staffItem={staffItem} />
             </div>
             <SeveralSquareContainerWeek items={severalSquareWeekItems} />
         </div>
@@ -22,4 +15,5 @@ const LineStaffSeveralContainer :React.FC<LineStaffSeveralContainerProps> = (sta
 };
 
 export default LineStaffSeveralContainer;
+
 

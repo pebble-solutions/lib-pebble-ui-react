@@ -2,7 +2,7 @@ const staffMemberItem =
 {
     id: '',
     firstName: 'John',
-    lastName: 'Doe'
+    lastName: 'Doe',
 }
 
 
