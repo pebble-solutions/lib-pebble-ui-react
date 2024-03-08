@@ -5,7 +5,6 @@ const staffMemberItem =
     lastName: 'Doe',
 }
 
-
 export function getStaffMemberItem() {
     return staffMemberItem
 }
