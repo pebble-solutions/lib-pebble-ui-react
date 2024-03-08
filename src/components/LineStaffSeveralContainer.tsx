@@ -3,7 +3,7 @@ import SeveralSquareContainerWeek from './periodRender/SeveralSquareContainerWee
 import type { StaffMemberType } from '../components/periodRender/types/StaffMemberType';
 import { SquareItem } from './periodRender/classes/SquareItem';
 
-const LineStaffSeveralContainer = ({ staffItem, severalSquareWeekItems }: { staffItem: StaffMemberType, severalSquareWeekItems: SquareItem[][] }) => {
+const LineStaffSeveralContainer = ({ staffItem, severalSquareWeekItems }: { staffItem: StaffMemberType, severalSquareWeekItems: SquareItem[] }) => {
     return (
         <div className="lineStaffSeveralContainer">
             <div className="staffMemberContainer">

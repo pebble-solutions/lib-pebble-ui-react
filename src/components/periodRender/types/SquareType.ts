@@ -1,3 +1,5 @@
+import type { Owner } from "./owner";
+
 export type SquareType = {
     
     id? : string
@@ -9,5 +11,6 @@ export type SquareType = {
     color? : string
     height? : string
     width? : string
+    owner : Owner
 
 }
